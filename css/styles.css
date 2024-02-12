@@ -25,11 +25,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
+
 html,body{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+    /* border: 1px solid; */
+    /* overflow: hidden; */
 }
 
 body {
@@ -38,6 +39,7 @@ body {
 	line-height: 1;
     background-color: black;
     color: #fff;
+    height: 100vh;
 }
 
 ol, ul {
@@ -62,7 +64,7 @@ div#navbar{
     /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 20px;
 }
 
 
@@ -76,6 +78,7 @@ ul#nav-links{
     bottom: 0;
     position: absolute;
     right: 0;
+    z-index: 0;
 }
 
 ul#nav-links li{
@@ -156,22 +159,51 @@ span#hamburguer-line::before{
 
 
 /* Main */
+#global-container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+main{
+    padding: 20px;
+}
+
 article#container{
     /* border: 1px solid red; */
+}
+
+section{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 section#presentation{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
-    background-color: rgb(2, 9, 53);
+    /* padding: 20px; */
+    /* background-color: rgb(2, 9, 53); */
 }
 
 img#profile-pic{
-    border: 7px solid rgb(2, 9, 53);
+    border: 7px solid rgba(2, 9, 53, 0);
     box-shadow: 10px 10px rgb(69, 95, 169);
     width: 50%;
     max-width: 140px;
-    margin-bottom: 20px;
+    margin-bottom: 36px;
 }
+
+section#presentation div h1, section#projects h1{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+section#projects{
+    background-color: rgb(35, 50, 91);
+    /* padding: 20px; */
+}
+
+
+
