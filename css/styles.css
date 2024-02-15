@@ -26,7 +26,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 
 html,body{
     /* border: 1px solid; */
@@ -160,9 +163,9 @@ span#hamburguer-line::before{
 
 /* Main */
 #global-container{
-    height: 100%;
     position: relative;
     overflow: hidden;
+    border: 1px solid red;
 }
 main{
     padding: 20px;
@@ -173,6 +176,7 @@ article#container{
 }
 
 section{
+    border: 1px solid;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -205,5 +209,30 @@ section#projects{
     /* padding: 20px; */
 }
 
+div#some-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#projects p{
+    margin-bottom: 24px;
+}
 
 
+
+div#some-projects a.project{
+    border: 1px solid;
+    margin-bottom: 12px;
+    padding: 0 10px;
+}
+
+div#some-projects a.project h2{
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+div#some-projects a.project img{
+    width: 100%;
+    max-width: 400px;
+}
