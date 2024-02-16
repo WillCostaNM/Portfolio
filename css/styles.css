@@ -31,11 +31,6 @@ a{
     color: #fff;
 }
 
-html,body{
-    /* border: 1px solid; */
-    /* overflow: hidden; */
-}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -64,7 +59,6 @@ table {
 
 /* Navbar */
 div#navbar{
-    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -176,7 +170,6 @@ main{
 }
 
 article#container{
-    /* border: 1px solid red; */
 }
 
 section{
@@ -186,30 +179,44 @@ section{
     border-radius: 20px;
 }
 
-section#presentation{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* padding: 20px; */
-    /* background-color: rgb(2, 9, 53); */
-}
-
-img#profile-pic{
-    border: 7px solid rgba(2, 9, 53, 0);
-    box-shadow: 10px 10px rgb(69, 95, 169);
-    width: 50%;
-    max-width: 140px;
-    margin-bottom: 36px;
-}
-
 section#presentation div h1, section#projects h1{
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 20px;
 }
 
+
+/* presentation */
+section#presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 72px;
+}
+
+img#profile-pic{
+    border: 7px solid rgba(2, 9, 53, 0);
+    box-shadow: 10px 10px rgba(89, 109, 164, 0.611);
+    width: 50%;
+    max-width: 140px;
+    margin-bottom: 36px;
+}
+
+ul#status{
+    margin-top: 20px;
+}
+
+ul#status li{
+    padding: 4px 0;
+}
+
+ul#status #social-media{
+    margin-top: 28px;
+}
+
+/* projects */
 section#projects{
-    background-color: rgb(35, 50, 91);
+    background-color: rgb(23, 32, 56);
     /* padding: 20px; */
 }
 
@@ -223,7 +230,6 @@ div#some-projects{
 section#projects p{
     margin-bottom: 24px;
 }
-
 
 
 div#some-projects a.project{
@@ -244,11 +250,21 @@ div#some-projects a.project img{
 }
 
 
+/* media queries */
 @media (min-width: 767px) {
     div#some-projects{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
     }
-    
+
+    section#presentation{
+        flex-direction: row;
+    }
+
+    img#profile-pic{
+        margin-bottom: 0;
+        margin-left: 36px;
+        order: 1;
+    }
 }
